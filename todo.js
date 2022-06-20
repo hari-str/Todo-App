@@ -4,6 +4,8 @@ let todoUl = document.getElementById('todo-ul');
 function addTask() {
     if (todoText.value.trim() == '') {
         alert('Enter some text');
+
+        todoText.focus();
     }
     else {
         let liTag = document.createElement('li');
