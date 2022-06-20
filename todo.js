@@ -28,7 +28,7 @@ function addTask() {
         liTag.appendChild(spanText);
         liTag.appendChild(spanClose);
 
-        todoUl.appendChild(liTag);
+        todoUl.prepend(liTag);
 
         todoText.value = '';
     }
