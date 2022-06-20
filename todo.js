@@ -29,7 +29,8 @@ function addTask() {
         liTag.appendChild(spanClose);
 
         todoUl.prepend(liTag);
-
+        console.log(todoText.value);
         todoText.value = '';
+
     }
 }
