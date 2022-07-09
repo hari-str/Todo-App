@@ -7,11 +7,12 @@
 body {
     background-color: #ffeb92;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 .container {
     background-color: #ffffff;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 18px 15px;
     position: relative;
@@ -61,14 +62,31 @@ body {
     padding-left: 9px;
     color: #707070;
     border-radius: 4px;
+    position: relative;
 }
 
 .list-section li i {
-    float: right;
+    position: absolute;
+    right: 10px;
     line-height: 25px;
-    margin-right: 5px;
 }
 
 .list-section span.done {
     text-decoration: line-through black;
+}
+
+
+@media screen and (max-width:767px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .input-section button {
+        margin-top: 1rem;
+    }
+
+    .input-section input {
+        width: 100%;
+    }
 }
